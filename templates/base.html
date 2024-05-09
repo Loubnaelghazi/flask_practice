@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    {% if custom_css %} <!--y3ni page test puisque m3ndach attribute custom css mrdich t aplicqua 3liha hd poage d css-->
+    <link rel="stylesheet" href="{{url_for ('static',filename='css/main.css')}}"> <!-- intwgration de fichiers css-->
+    {% endif %}
+    <title>{{pagetitle}}</title>
+  </head>
+
+
+
+
+
+
+
+
+
+
+  <!-- 7na bghena anahu body buhdu li ykun dynqmique , y3ni anb9aw n extendiw kulchy mn hna unbdlu rer f body f les pages khren  -->
+  <body>
+    {% block body %} 
+    {% endblock %}
+  </body>
+</html>
